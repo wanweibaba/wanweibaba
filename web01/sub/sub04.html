@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素，简单理解就是可也输入的元素</title>
+</head>
+
+<body>
+  <nav styie="text-align:right;">
+    <a href="index.html">返回首页</a>
+  </nav>
+
+  <!-- 
+    文本框 input就是表单元素里的输入框
+    text是默认值 placeholder是输入的提示信息
+  -->
+  姓名: <input type="text" placeholder="请输入姓名">
+
+  密码: <input type="password" placeholder="登陆密码" onkeyup="changePwd(this)">
+  <!-- 数值输入框和日期输入框 -->
+  数值: <input type="number">
+  日期: <input type="date">
+  <div id="info"></div>
+  <script>
+    function changePwd(ele) {
+      document.getElementById('info').innerHTML = ele.value;
+    }
+  </script>
+  <hr>
+  <!-- 标签 label -->
+  <label>
+    带标签的表单元素
+    <input type="text">
+    点击标签文本
+  </label>
+  <!-- 
+  单选按钮 radio name属性值相同为一组
+  checked属性出现表示为选中状态 
+-->
+  <label>
+    <input type="radio" name="sex">男神
+  </label>
+  <label>
+    <input type="radio" name="sex">女神
+  </label>
+  <label>
+    <input type="radio" name="sex" checked>保密
+  </label>
+
+  <!-- 复选框 -->
+  <label>
+    <input type="checkbox">游戏
+  </label>
+  <label>
+    <input type="checkbox">音乐
+  </label>
+  <label>
+    <input type="checkbox" checked>电影
+  </label>
+  <label>
+    <input type="checkbox">学习
+  </label>
+  <!--
+   列表 select 符合标记 
+   option是选项
+   selected默认选项 
+  -->
+  <select>
+    <option>请选择最高学历</option>
+    <option selected>高中</option>
+    <option>初中</option>
+    <option>小学</option>
+  </select>
+
+  <select size="3" multiple>
+    <option>屠家强</option>
+    <option>雷昕龙</option>
+    <option>洪圳楠</option>
+    <option>李耀辉</option>
+    <option>邹琼洁</option>
+    <option>肖月红</option>
+    <option>曾露玲</option>
+  </select>
+
+
+</body>
+
+</html>
