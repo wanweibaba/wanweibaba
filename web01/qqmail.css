@@ -58,12 +58,82 @@ header {
   border-bottom: 1px solid #d6dfea;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
 }
 
-.main-left{
+.main-left {
   margin-right: 4rem;
+}
+
+/* 右边边框 */
+.mian-right {
+  border: 1px solid#a0b1c4;
+  border-radius: 4px;
+}
+
+/* 右边第一行样式 */
+.mian-right01 {
+  display: flex;
+  /* 压力布局的水平对齐 space-around表示将空白区域平均分配在每个元素的两旁 */
+  justify-content: space-around;
+  background-color: #f9fbfe;
+  color: #999999;
+  padding: 0.5rem 0px;
+  /* 修正圆角 */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* 右边边框的大框 */
+.main-form {
+  padding: 2rem;
+  border-top: 1px solid #a0b1c4;
+}
+
+/* input元素特效 */
+.myinput {
+  border: 1px solid#96a5b4;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.myinput>input {
+  /* 去掉input元素的默认边框 */
+  outline: none;
+  border-width: 0px;
+  width: 220px;
+}
+
+/* 
+:focus-within 伪类，意思是元素或者元素里面任意子元素拥有焦点的时候套用
+:hover 伪类，意思是鼠标在元素里面的时候套用
+*/
+.myinput:focus-within {
+  border-color: #6892e7;
+}
+
+.login-button {
+  background-color: #5a98de;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 0px;
+  margin: 8px 0px;
+  border-radius: 4px;
+  /* 鼠标指针 */
+  cursor: pointer;
+}
+
+.login-button:hover{
+  background-color: #6aa2e0;
+}
+
+/* 扫码登陆 */
+.qrcode{
+  text-align: center;
+  font-size: 0.8em;
+  color: #225592;
 }

@@ -1,0 +1,12 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dingbu {
+  background-color: #c2185b;
+  text-align: right;
+  font-size: 10px;
+  color: aliceblue;
+  padding: 0em 1em 0em 0em;
+}
