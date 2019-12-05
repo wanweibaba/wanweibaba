@@ -1,0 +1,27 @@
+.ani01{
+  font-size: 1rem;
+  /* tramsition是过度动画，表示元素属性变化时平缓过度
+     第一个参数是属性名称 第二个参数是过度秒数
+     第三个是可选参数，速动函数，非匀速变化
+  */
+  transition: font-size 2s ease-in-out;
+}
+
+.ani01:hover{
+  font-size: 1.5rem;
+}
+
+.ani02{
+  box-shadow: 0px 0px 0px #ffff00;
+  width: 200px;
+  height: 100px;
+  background-color: #dddd00;
+  transition: all 2s;
+}
+
+.ani02:hover{
+  box-shadow: 0px 0px 1rem #ffff00;
+  background-color: #00ff00;
+  width: 210px;
+  height: 110px;
+}
